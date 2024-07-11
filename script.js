@@ -1,4 +1,3 @@
-// Person class definition
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -9,8 +8,6 @@ class Person {
     console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
   }
 }
-
-// Employee class definition, inheriting from Person
 class Employee extends Person {
   constructor(name, age, jobTitle) {
     super(name, age);
@@ -22,11 +19,5 @@ class Employee extends Person {
   }
 }
 
-// Example usage:
-let person1 = new Person("Alice", 30);
-person1.greet(); // Output: Hello, my name is Alice, I am 30 years old.
 
-let employee1 = new Employee("Bob", 25, "Software Engineer");
-employee1.greet();    // Output: Hello, my name is Bob, I am 25 years old.
-employee1.jobGreet(); // Output: Hello, my name is Bob, I am 25 years old, and my job title is Software Engineer.
 
