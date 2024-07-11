@@ -1,4 +1,4 @@
-// Person class definition
+// In main.html or your JavaScript file
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -6,11 +6,10 @@ class Person {
   }
 
   greet() {
-    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
   }
 }
 
-// Employee class definition, inheriting from Person
 class Employee extends Person {
   constructor(name, age, jobTitle) {
     super(name, age);
@@ -22,5 +21,6 @@ class Employee extends Person {
   }
 }
 
-// Export classes if needed (for module-based environment)
-// export { Person, Employee };
+// Export classes if needed
+window.Person = Person;
+window.Employee = Employee;
